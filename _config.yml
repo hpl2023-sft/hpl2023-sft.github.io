@@ -1,2 +1,13 @@
 theme: jekyll-theme-minimal
 title: HPL-II 2023's Sustainability For Teachers project homepage
+collections:
+  episodes:
+    output: true
+    permalink: /episodes/:title/
+    
+defaults:
+  - scope:
+      path: ""
+      type: "episodes"
+    values:
+      layout: "episode"

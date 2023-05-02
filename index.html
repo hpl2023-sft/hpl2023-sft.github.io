@@ -1,1 +1,39 @@
-<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" /><link href="./css/main.css" rel="stylesheet" /><title>Document</title></head><body><div class="v14_479"><div class="v14_480"><div class="v14_481"><div class="v14_482"><span class="v14_483">Differential equations with predator/prey models </span><div class="v14_484"></div><span class="v14_486">February 20, 2023</span></div><span class="v14_497">Episodes</span></div><div class="v14_498"><span class="v14_499">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim eque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis</span><div class="name"></div></div></div><div class="v14_501"><div class="v14_502"></div><span class="v14_503">Sustainability For Teachers Podcast</span></div></div></body></html>
+---
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="css/main-page.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<main class="main">
+    <header>
+        <div class="header__content">
+            <h1 class="header__title">Sustainability For Teachers Podcast</h1>
+            <p class="header__subtitle">A podcast by EPFL</p>
+        </div>
+    </header>
+
+    <section class="introduction">
+        <div class="intro__container">
+            <p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </section>
+
+    <section class="episodes">
+        <h2>Episodes</h2>
+        <ul class="episodes__list">
+            {% for episode in site.episodes %}
+            <li class="episodes__item"><a class="episodes__link" href="{{ episode.url }}">{{ episode.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+</main>
+
+</html>
